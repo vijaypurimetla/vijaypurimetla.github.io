@@ -1,0 +1,287 @@
+* {
+  text-align: justify;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar:hover {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: silver;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: silver;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  height: 30px;
+  background-color: transparent;
+}
+.load {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  color:black;
+}
+.loader .circle1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-top: 2px solid #317ac7;
+  animation: spin 4s linear infinite;
+}
+.loader .circle2 {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-top: 2px solid #f1de4f;
+  animation: spin 3s linear infinite;
+}
+.loader .circle3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 2px solid #de6e3c;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.navbar-toggler,
+.navbar-toggler:focus {
+  outline: none;
+  border: none;
+}
+.sidebar.show,
+.sidebar {
+  display: block;
+  transition: linear 0.3s;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  z-index: 10000;
+  position: fixed;
+  box-shadow: 0px 5px 20px grey;
+  background-color: #317ac7;
+}
+.sidebar {
+  width: 250px;
+  color: white;
+}
+.profile .dropdown {
+  padding: 10px 0 10px 0px;
+}
+.profile {
+  padding: 15px 15px 0px;
+  background-color: #317ac7;
+  text-align: center;
+  font-size: 12px;
+}
+.btn-primary {
+  color: white !important;
+}
+.profile::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 90%;
+  background: #c0c0c054;
+  left: 10px;
+}
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.collapse a,
+.main-menu a {
+  color: white;
+}
+.collapse a:hover,
+.main-menu a:hover {
+  background-color: #31abe4;
+}
+.icon {
+  font-size: 25px;
+  background: white;
+  color: black;
+}
+.fa {
+  width: 25px;
+}
+.main {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.submain {
+  height: 100%;
+  overflow-y: scroll;
+}
+.profile-main {
+  display: flex;
+  background: #80808012;
+  padding: 30px;
+}
+.detail {
+  padding-right: 10px;
+  text-align: justify;
+}
+.job {
+  padding: 3rem;
+  margin-left: 15px;
+}
+.job #text {
+  padding-left: 10px;
+}
+.job .section-name {
+  font-size: 2rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.job .section-name::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 90%;
+  background: #317ac7;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.menu {
+  font-size: 30px;
+  color: white;
+}
+.job .row {
+}
+.item-name {
+  font-size: 1rem;
+}
+.btn-black {
+  background: black;
+  color: white;
+}
+.view {
+  display: none;
+}
+.card:hover .view {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card:hover {
+  background: #a4a7a9;
+  transition: all 0.4s ease-in-out;
+}
+#skills {
+  padding: 30px;
+}
+.item-name {
+  font-size: 1rem;
+}
+.item-icon {
+  font-size: 1.875rem;
+}
+.item-icon .fa-salesforce {
+  color: #00a1e0;
+}
+.item-icon .fa-js-square {
+  color: #f1de4f;
+}
+.item-icon .fa-users {
+  color: white;
+  background: #f1de4f;
+  border-radius: 50%;
+}
+.item-description {
+  font-size: 0.875rem;
+}
+.fa-html5 {
+  color: #de6e3c;
+  padding-right: 5px;
+}
+.fa-css3-alt {
+  color: #53a7dc;
+}
+.fa-python {
+  color: #456e9c;
+}
+.cert {
+  display: flex;
+  padding: 20px;
+}
+.cert img {
+  padding-right: 10px;
+}
+@media (max-width: 990px) {
+  .sidebar {
+    display: none;
+  }
+  .main {
+    margin: auto;
+    width: 100%;
+    height: 90%;
+    margin-top: 54px;
+  }
+  .submain {
+    overflow: auto;
+  }
+  .navbar {
+    background: #317ac7;
+  }
+  .profile-main {
+    display: block;
+  }
+  .img img {
+    width: 50%;
+    height: 50%;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .sidebar.show,
+  .sidebar {
+    width: 100%;
+  }
+  .img img {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+}

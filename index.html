@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijay Purimetla</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/7b1d01d2df.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector("#loader").style.visibility = "visible";
+        } else {
+          document.querySelector("#loader").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+        }
+      };
+      /*$(window).load(function () {
+        // Animate loader off screen
+        $("#loader").animate(
+          {
+            top: -200,
+          },
+          1500
+        );
+      });*/
+    </script>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>      
+    </div>
+    <div class="sidebar" id="sidebar">
+      <div class="profile">
+        <h3 class="name">Vijay Purimetla</h3>
+        <img
+          src="./img/profile.jpg"
+          class="rounded-circle"
+          width="100px"
+          height="100px"
+          alt=""
+        />
+        <div style="padding: 5px; text-align: justify">
+          <p>
+            Hi, my name is Vijay and I am a Salesforce Developer. Welcome to my
+            professional website
+          </p>
+        </div>
+      </div>
+      <div class="main-menu">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <i class="fa fa-user-circle"></i> About Me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">
+              <i class="fa fa-laptop"></i> Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">
+              <i class="fa fa-file-text"></i> Resume</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#testimonial" class="nav-link"
+              ><i class="fa fa-quote-left"></i> Testimonials</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">
+              <i class="fa fa-address-card-o"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top top-nav">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#sidebar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="menu">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+      </nav>
+      <div id="about" class="submain">
+        <div class="profile-main">
+          <div class="detail">
+            <h3>Vijay Purimetla</h3>
+            <h5>Salesforce Developer</h5>
+            <p>
+              A dynamic Software professional powered by the knowledge and
+              passion, with the ability to plan, design and enable projects of
+              unmatched scale and complexity. Presently focusing to join some
+              exciting and challenging projects that would nurture to be finest
+              professional with both career flexibility and growth offerings.
+            </p>
+            <a class="btn btn-primary" href="#skills">
+              <i class="fa fa-laptop"></i>View Portfolio
+            </a>
+            <a class="btn btn-black" href="#resume">
+              <i class="fa fa-file-text"></i>View Resume
+            </a>
+          </div>
+          <div class="img">
+            <img src="./img/profile.jpg" width="150px" height="150px" />
+          </div>
+          <span></span>
+        </div>
+        <div class="job">
+          <span></span>
+          <h3
+            style="margin-left: 15px; padding-bottom: 10px"
+            class="section-name"
+          >
+            What I do
+          </h3>
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="item-icon">
+                <i class="fab fa-salesforce"></i>
+              </div>
+              <h3 class="item-name">Salesforce</h3>
+              <div class="item-description">
+                <p>
+                  Develop &amp; customize CRM on top of Salesforce Lightning
+                  Platform. Develop lightning components with modern javascript
+                  framework. Create users, profiles, roles, sharing settings,
+                  approval process, workflows and email alerts.
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="item-icon">
+                <img src="./img/dataloader.png" style="width: 1.87em" />
+              </div>
+              <h3 class="item-name">Data Loader</h3>
+              <div class="item-description">
+                <p>
+                  Integrate Salesforce with External systems on batch and
+                  Realtime using Dataloader, REST and SOAP services.
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="item-icon">
+                <img src="./img/community.png" style="width: 1.35em" />
+              </div>
+              <h3 class="item-name">Salesforce Communities</h3>
+              <div class="item-description">
+                <p>
+                  Create and customize customer centric website on top of
+                  standard salesforce platform for acess to external customers
+                  and partners.
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="item-icon">
+                <img src="./img/apex.png" style="width: 1.35em" />
+              </div>
+              <h3 class="item-name">Apex + Visualforce</h3>
+              <div class="item-description">
+                <p>
+                  Develop and integrate business functionalities with Salesforce
+                  Datamodel using programatic approach. Create triggers, classes
+                  and Visualforce pages to display data to the end user.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="item-icon">
+                <i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i>
+              </div>
+              <h3 class="item-name">HTML5 &amp; CSS3</h3>
+              <div class="item-description">
+                <p>
+                  Design and develop website user interface with modern stylings
+                  using HTML5 and CSS3. Animate elements using CSS properties to
+                  make the page look more alive.
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="item-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <h3 class="item-name">Java Script</h3>
+              <div class="item-description">
+                <p>
+                  Develop JS functions for additional functionalities based on
+                  user events. Make server side calls using AJAX.
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="item-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <h3 class="item-name">Python</h3>
+              <div class="item-description">
+                <p>
+                  Develop basic functionalities using conditional statements,
+                  loops, classes. Create websites using flask framework.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="achivements job">
+          <h3
+            style="margin-left: 15px; padding-bottom: 10px"
+            class="section-name"
+          >
+            Professional Achivements
+          </h3>
+          <div class="row">
+            <div class="col-12 col-lg-6 cert">
+              <img src="./img/sfdcDev.png" style="width: 40%" />
+              <div class="detail">
+                <h3 class="item-name">Salesforce Paltform Developer 1</h3>
+                <small>
+                  Certified Platform Developer I developers understand how to
+                  develop and deploy custom business logic and custom interfaces
+                  using the programmatic capabilities of the Lightning Platform.
+                </small>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 cert">
+              <img src="./img/copadoAdmin.png" style="width: 40%" />
+              <div class="detail">
+                <h3 class="item-name">Copado Administrator</h3>
+                <small>
+                  Certified Adminsitrators understand how to deploy metadata
+                  from one org to other using diplomatic tools. Have a knowledge
+                  of Salesforce native DevOps tools and deployment strategies.
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="submain">
+        <div class="row">
+          <div class="col-6 col-lg-4">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-lg-4">
+                  <img
+                    class="card-img-top"
+                    src="./img/Logo.png"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="col-lg-8">
+                  <h5></h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+              <div class="view">
+                <button class="btn btn-secondary">
+                  <i class="fa fa-eye"></i> View More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./img/Logo.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="view">
+                <button class="btn btn-secondary">
+                  <i class="fa fa-eye"></i> View More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="resume" class="submain">
+        <iframe src="./docs/resume.pdf" width="100%" height="100%"></iframe>
+      </div>
+      <div id="testimonial" class="submain"></div>
+      <div id="contact" class="submain"></div>
+    </div>
+    <script>
+      $("html").on("click", function () {
+        if ($(".sidebar").hasClass("show")) {
+          $(".sidebar").removeClass("show");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+    <link rel='stylesheet' href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            background: url(./img/background.jpg);
+            background-position: center;
+            background-size: cover;
+            background-position:center;
+            background-attachment: fixed;
+        }
+        .navbar-light .navbar-brand,.nav-link
+        {
+            color: white !important;
+        }        
+        .navbar-toggler, .navbar-toggler:focus
+        {
+            outline: none;
+            border: none;
+        }        
+        .nav-item:hover
+        {
+            background: #dee2e65c;
+        }
+        .nav-item
+        {
+            padding: 0 10px;
+        }
+        .navbar
+        {            
+            padding: 0.5rem 1rem 0;
+        }
+        .active
+        {
+            border-bottom: 4px solid #007bff;
+        }
+        .main
+        {
+            background-color: #2a7cce5c;
+            height: 100vh;            
+        }
+        .content
+        {
+            top: 40%;
+            position: absolute;
+            font-family: 'Bad Script', cursive;
+            text-align: right;
+            float: right;
+            padding: 0 30px;
+            width: 100%;
+            color: white;
+        }
+        .btn-round
+        {
+            color: white;
+            width: 100px;
+            border-radius: 100px;
+            border:1px solid;
+            float: right;
+        }
+        .btn-round:hover
+        {
+            color: white;
+        }
+        .md-btn-block
+        {
+            display: none;
+            position: absolute;
+            /* float: right; */
+            width: 100%;
+            top: 8px;
+            right: 20px;
+            z-index: -1;            
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover 
+        {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content 
+        {
+            display: block;
+        }
+        @media (max-width: 990px) {
+            .navbar, .active
+            {
+                border-bottom: 0px solid white;                
+            }
+            .navbar-light .navbar-brand
+            {
+                left: 40%;
+                top: 6px;
+                position: absolute;
+            }            
+            .md-btn-block
+            {
+                display: block;
+            }
+            .md-btn-none
+            {
+                display: none;
+            }
+
+        }
+    </style>   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">                         
+        <div class="collapse navbar-collapse justify-content-end sidebar-sticky" id="navbarSupportedContent" >
+          <ul class="navbar-nav nav ">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <div class="dropdown">
+                    <a class="nav-link" href="#">Accounts</a>                    
+                </div>              
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cases</a>
+            </li>            
+            <!--li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">My Profile</a>
+                  <a class="dropdown-item" href="#">My Settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </li-->                        
+          </ul>                    
+        </div>            
+    </nav>    
+    <div class="main">
+        <div class="content">
+            <h1>Welcome</h1>
+        </div>        
+    </div>        
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>    
+</body>
+</html>
