@@ -275,7 +275,7 @@
     padding: 2rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .sidebar.show,
   .sidebar {
     width: 100%;
