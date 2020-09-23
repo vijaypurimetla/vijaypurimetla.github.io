@@ -94,8 +94,7 @@
 .sidebar.show .close {
   display: block;
 }
-.sidebar.show .profile
-{
+.sidebar.show .profile {
   margin-top: 40px;
 }
 .close {
@@ -257,6 +256,48 @@
 }
 .cert img {
   padding-right: 10px;
+}
+.testimonial {
+  padding: 3rem;
+}
+.testimonial-card {
+  padding: 1.5rem;
+  padding-left: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  background: #fafafa;
+  height: 100%;
+  position: relative;
+}
+.testimonial-card .source-holder {
+  position: relative;
+  padding-left: 76px;
+  height: 60px;
+}
+.testimonial-card .source-profile {
+  position: relative;
+  padding-left: 76px;
+  height: 60px;
+}
+.testimonial .fa-quote-left {
+  position: absolute;
+  left: 0.35rem;
+  top: 0.3rem;
+  color: #fff;
+  font-size: 0.75rem;
+}
+.quote-content {
+}
+.quote-holder::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 40px 0 0;
+  border-color: #54b689 transparent transparent transparent;
 }
 @media (max-width: 990px) {
   .sidebar {
