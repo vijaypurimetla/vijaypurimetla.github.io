@@ -274,9 +274,20 @@
   height: 60px;
 }
 .testimonial-card .source-profile {
-  position: relative;
-  padding-left: 76px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.testimonial-card .source-holder .meta {
+  padding-top: .5rem;
+}
+.testimonial-card .testimonial-source {
+  width: 60px;
   height: 60px;
+}
+.meta {
+  color: #8f8f8f;
+  font-size: 0.8125rem;
 }
 .testimonial .fa-quote-left {
   position: absolute;
