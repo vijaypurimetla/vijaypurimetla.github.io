@@ -15,6 +15,40 @@
                 outline: 1px solid #005290;
             }
         </style>
+    
+    <script
+      src="https://kit.fontawesome.com/7b1d01d2df.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector("#loader").style.visibility = "visible";
+        } else {
+          document.querySelector("#loader").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+        }
+      };
+      /*$(window).load(function () {
+        // Animate loader off screen
+        $("#loader").animate(
+          {
+            top: -200,
+          },
+          1500
+        );
+      });*/
+    </script>
+  </head>
+  <body>
     <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
         <script type='text/javascript'>
             var initESW = function(gslbBaseURL) {
@@ -57,39 +91,6 @@
                 initESW('https://service.force.com');
             }
         </script>
-    <script
-      src="https://kit.fontawesome.com/7b1d01d2df.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.bundle.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script>
-      document.onreadystatechange = function () {
-        if (document.readyState !== "complete") {
-          document.querySelector("body").style.visibility = "hidden";
-          document.querySelector("#loader").style.visibility = "visible";
-        } else {
-          document.querySelector("#loader").style.display = "none";
-          document.querySelector("body").style.visibility = "visible";
-        }
-      };
-      /*$(window).load(function () {
-        // Animate loader off screen
-        $("#loader").animate(
-          {
-            top: -200,
-          },
-          1500
-        );
-      });*/
-    </script>
-  </head>
-  <body>
     <div class="loader" id="loader">
       <div class="circle1"></div>
       <div class="circle2"></div>
